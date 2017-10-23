@@ -1,0 +1,4 @@
+Points to consider for updating the code
+- PUF #CRP based on population - P.Ramesh NATW paper
+- Utilize more module functions (which are written in C) for speed optimization
+- Custom input and options for other users
