@@ -14,8 +14,8 @@ outputTransactionHash = raw_input('Enter previous transaction hash: ')
 print "Received previous transaction hash is: ", outputTransactionHash
 
 #user provides recipient's address                        #1KKKK6N21XKo48zWKuQKXdvSsCf95ibHFa
-#scriptPubKey = raw_input('Enter recepient address: ')
-#print "Received recipient address:", scriptPubKey
+scriptPubKey = raw_input('Enter recepient address: ')
+print "Received recipient address:", scriptPubKey
 
 #public key is generated from the private key using Ellicptic Curve Cryptography (ECC) 
 #392B964E911955ED50E4E368A9476BC3F9DCC134280E15636430EB91145DAB739F0D68B82CF33003379D885A0B212AC95E9CDDFD2D391807934D25995468BC55
@@ -38,4 +38,4 @@ print "publKeyToAddress: ", publKeyToAddress              #133txdxQmwECTmXqAr9RW
 print "pubKeyToAddress:  ", pubKeyToAddress               #133txdxQmwECTmXqAr9RWNHnzQ175jGb7e
 
 signed_txn = txnUtils.makeSignedTransaction(privateKey,outputTransactionHash,0,scriptPubKey,
-                                   [[00001,keyUtils.addrHashToScriptPubKey("1KKKK6N21XKo48zWKuQKXdvSsCf95ibHFa")]])
+                                   [[00001,keyUtils.addrHashToScriptPubKey(scriptPubKey)]])
