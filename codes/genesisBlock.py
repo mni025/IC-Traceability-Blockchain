@@ -1,4 +1,5 @@
 import blkUtils, json
+
 state = {}  # Define the initial state
 genesisBlockTxns = [state]
 genesisBlockContents = {u'blockNumber':0,u'parentHash':None,u'txnCount':1,u'txns':genesisBlockTxns}
