@@ -136,6 +136,8 @@ def showTxn(txn):
 
 
 #############################################################################################    
+
+
 class TestTxnUtils(unittest.TestCase):
     def test_verifyParseTxn(self):
         txn =          ("0100000001a97830933769fe33c6155286ffae34db44c6b8783a2d8ca52ebee6414d399ec300000000" +
@@ -212,6 +214,8 @@ class TestTxnUtils(unittest.TestCase):
             )
         showTxn(signed_txn)
         #verifyTxnSignature(signed_txn)
+
+
 #############################################################################################
 if __name__ == '__main__':
     unittest.main()
