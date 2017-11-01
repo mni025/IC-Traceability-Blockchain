@@ -6,7 +6,6 @@ import unittest
 import random
 import re
 import struct
-
 import utils
 
 #the Wallet Interchange Format key (WIF) is used to add a private key to client wallet software. 
