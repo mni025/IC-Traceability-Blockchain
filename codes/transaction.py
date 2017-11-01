@@ -4,6 +4,7 @@ import hashlib
 import txnUtils
 import pickle
 
+
 txnBuffer = []
 
 #User frist provides the WIF private key which is converted to the private key 
