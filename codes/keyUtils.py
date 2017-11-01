@@ -1,4 +1,3 @@
-# https://pypi.python.org/pypi/ecdsa/0.10
 import ecdsa
 import ecdsa.der
 import ecdsa.util
@@ -10,7 +9,8 @@ import struct
 
 import utils
 
-# https://en.bitcoin.it/wiki/Wallet_import_format
+#the Wallet Interchange Format key (WIF) is used to add a private key to client wallet software. 
+#This is simply a Base58Check encoding of the private key into ASCII, which is easily reversed to obtain the 256-bit private key
 def privateKeyToWif(key_hex):    
     return utils.base58CheckEncode(0x80, key_hex.decode('hex'))
 

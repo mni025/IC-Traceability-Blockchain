@@ -2,6 +2,9 @@ import keyUtils
 import utils
 import hashlib
 import txnUtils
+import pickle
+
+txnBuffer = []
 
 #User frist provides the WIF private key which is converted to the private key 
 wifPrivateKey = raw_input('Enter your wif private key: ') #5Kb6aGpijtrb8X28GzmWtbcGZCG8jHQWFJcWugqo3MwKRvC8zyu
@@ -40,3 +43,14 @@ print "pubKeyToAddress:  ", pubKeyToAddress               #133txdxQmwECTmXqAr9RW
 
 signed_txn = txnUtils.makeSignedTransaction(privateKey,outputTransactionHash,0,scriptPubKey,
                                    [[00001,keyUtils.addrHashToScriptPubKey(addrHash)]])
+
+
+txnBuffer.append(signed_txn)
+#fo = open("txnBuffer.txt","wb")
+#for item in txnBuffer:
+#  fo.write("%s\n" % item)
+
+#itemlist = ['a','b','c']
+
+with open('txnBuffer.txt', 'wb') as fp:
+    pickle.dump(txnBuffer, fp)
