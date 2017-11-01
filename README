@@ -8,3 +8,5 @@ Recipient's Address: 1KKKK6N21XKo48zWKuQKXdvSsCf95ibHFa
 
 Addresses and keys can be checked from this site: https://www.mobilefish.com/services/cryptocurrency/cryptocurrency.html
 
+The main function for creating a block consisting of valid transactions is block.py
+
