@@ -13,3 +13,12 @@ Recipient's Address: 1KKKK6N21XKo48zWKuQKXdvSsCf95ibHFa
 Addresses and keys can be checked from this site: https://www.mobilefish.com/services/cryptocurrency/cryptocurrency.html
 
 The main function for creating a block consisting of valid transactions is block.py
+
+
+# Sending a custom transaction to Bitcoin blockchain
+
+JavaScript code for creating and sending a transaction to blockchain with metadata
+
+A really simple workflow to interact with the Bitcoin blockchain from the command line using Javascript.
+
+# Smart contract implementation for Ethereum
