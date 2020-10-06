@@ -23,8 +23,6 @@ contract ownershipContract {
     constructor () public {
         consortium = msg.sender;
     }
-    
-    uint deviceIdentifier;
 
     function registerDevice(uint _identifier, uint _challenge, uint _response, uint _pubKey) public {
         idInfo[_identifier].owner = msg.sender;
