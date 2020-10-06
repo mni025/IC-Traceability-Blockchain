@@ -22,3 +22,5 @@ JavaScript code for creating and sending a transaction to blockchain with metada
 A really simple workflow to interact with the Bitcoin blockchain from the command line using Javascript.
 
 # Smart contract implementation for Ethereum
+
+This contains the smart contract for enabling IC traceability.
