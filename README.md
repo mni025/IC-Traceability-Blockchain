@@ -1,3 +1,5 @@
+This repository contains the necessary codes for implementing IC traceability via blockchains and smart contracts. The repository is divided into three main sections: codes for creating a custom blockchain, code for committing a custom trasnaction to a blockchian and smart contract implementation for Ethereum.
+
 # Creating a custom blockchain
 
 The main function for creating a transaction is transaction.py
