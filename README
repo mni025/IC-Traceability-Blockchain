@@ -1,4 +1,4 @@
-#Creating a custom blockchain
+# Creating a custom blockchain
 
 The main function for creating a transaction is transaction.py
 
